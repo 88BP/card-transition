@@ -1,0 +1,31 @@
+{
+  "name": "Wellness",
+  "version": "1.0.0",
+  "description": "Wellness Website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Quench",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cache": "*",
+    "gulp-concat": "*",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "*",
+    "gulp-minify-css": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*"
+  },
+  "dependencies": {
+    "main-bower-files": "^2.11.1",
+    "wiredep": "^3.0.0"
+  }
+}
