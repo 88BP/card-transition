@@ -138,7 +138,7 @@ gulp.task('production', function(){
 gulp.task('dev', ['browser-sync'], function(){
   gulp.watch("./src/sass/**/*.scss", ['styles']);
   gulp.watch("./src/js/**/*.js", ['scripts']);
-  gulp.watch("*.html", ['bs-reload']);
+  gulp.watch("./src/*.html", ['bs-reload']);
 });
 
 gulp.task('default', function() {
