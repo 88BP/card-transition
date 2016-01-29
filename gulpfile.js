@@ -62,7 +62,11 @@ gulp.task('bs-reload', function () {
 
 gulp.task('images', function(){
   gulp.src('src/img/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(imagemin({
+      progressive: true,
+      interlaced: true,
+      svgoPlugins: [{removeUnknownsAndDefaults: false}, {cleanupIDs: false}]
+    }))
     .pipe(gulp.dest('dist/img/'));
 });
 
@@ -151,4 +155,4 @@ gulp.task('default', function() {
     .pipe(gulp.dest('src/js/plugins/'))
 });
 
-gulp.task('prod', ['production', 'html-replace', 'bower-files']);
+gulp.task('prod', ['production', 'html-replace', 'bower-files', 'images']);
